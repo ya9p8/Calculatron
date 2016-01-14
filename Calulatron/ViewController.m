@@ -27,6 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
+    
+    double opOne = self.operandOne.text.doubleValue;
+    double opTwo = self.operandTwo.text.doubleValue;
+    
     self.operation.text = sender.titleLabel.text;
     
     NSString *operation = self.operation.text;
@@ -40,6 +44,7 @@
     } else {
         
     }
+
 }
 
 @end
