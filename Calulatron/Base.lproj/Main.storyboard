@@ -24,7 +24,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-un-uiW">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOd-1w-hxz">
                                         <rect key="frame" x="187" y="0.0" width="186" height="30"/>
@@ -35,39 +35,48 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xet-D7-eWs">
                                         <rect key="frame" x="373" y="0.0" width="187" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gN7-xP-tPy"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgX-ty-JnZ">
+                                <rect key="frame" x="20" y="78" width="560" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="rKg-pQ-Z2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tTi-QP-7Z3" userLabel="Operations Stack View">
-                                <rect key="frame" x="175" y="78" width="250" height="44"/>
+                                <rect key="frame" x="240" y="175" width="120" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-oe-kUx">
-                                        <rect key="frame" x="0.0" y="0.0" width="63" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="+"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FO3-KS-qWI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-rp-uXf">
-                                        <rect key="frame" x="63" y="0.0" width="62" height="44"/>
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="-"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFk-P9-zwx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3r-I2-8dA">
-                                        <rect key="frame" x="125" y="0.0" width="63" height="44"/>
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="x"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iU0-M2-U9H"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0i-8q-CKB">
-                                        <rect key="frame" x="188" y="0.0" width="62" height="44"/>
+                                        <rect key="frame" x="90" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="/"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAE-fv-Mzu"/>
@@ -75,17 +84,20 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="T6G-r0-1vv"/>
-                                    <constraint firstAttribute="height" constant="44" id="wRS-52-A0n"/>
+                                    <constraint firstAttribute="width" constant="120" id="3Fu-l8-h1Z"/>
+                                    <constraint firstAttribute="height" constant="30" id="JHo-C0-Vih"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="b4L-E9-2I4" secondAttribute="trailing" id="9zU-aj-azZ"/>
-                            <constraint firstItem="tTi-QP-7Z3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L71-nr-hFD"/>
-                            <constraint firstItem="tTi-QP-7Z3" firstAttribute="top" secondItem="b4L-E9-2I4" secondAttribute="bottom" constant="8" id="aTn-Ex-nC2"/>
+                            <constraint firstItem="KgX-ty-JnZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E5T-Im-iZ5"/>
+                            <constraint firstItem="tTi-QP-7Z3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IDP-mb-rlX"/>
+                            <constraint firstItem="tTi-QP-7Z3" firstAttribute="top" secondItem="KgX-ty-JnZ" secondAttribute="bottom" constant="8" id="Kd1-rh-pJv"/>
+                            <constraint firstItem="KgX-ty-JnZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="amD-AY-WHA"/>
                             <constraint firstItem="b4L-E9-2I4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="awe-Rn-RyW"/>
+                            <constraint firstItem="KgX-ty-JnZ" firstAttribute="top" secondItem="b4L-E9-2I4" secondAttribute="bottom" constant="8" id="lh6-bh-Nhg"/>
                             <constraint firstItem="b4L-E9-2I4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ztd-bB-xo3"/>
                         </constraints>
                     </view>
@@ -93,10 +105,12 @@
                         <outlet property="operandOne" destination="hYf-un-uiW" id="owu-ND-4u1"/>
                         <outlet property="operandTwo" destination="xet-D7-eWs" id="8V5-Mh-3gb"/>
                         <outlet property="operation" destination="oOd-1w-hxz" id="hLH-N7-xMi"/>
+                        <outlet property="resultsLabel" destination="KgX-ty-JnZ" id="0Zp-LQ-0MU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="339"/>
         </scene>
     </scenes>
 </document>
