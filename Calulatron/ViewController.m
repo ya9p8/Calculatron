@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *operandOne;
+@property (weak, nonatomic) IBOutlet UITextField *operandTwo;
+@property (weak, nonatomic) IBOutlet UILabel *operation;
 
 @end
 
@@ -22,6 +25,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onOperationTapped:(UIButton *)sender {
 }
 
 @end
